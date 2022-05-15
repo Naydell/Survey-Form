@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form" required>
+      <fieldset>
+        <label id="name-label">Name </label><input id="name" type="text" placeholder="Enter your name" required />
+        <label id="email-label">Email </label><input id="email" type="email" placeholder="Enter your email" required/>
+        <label id="number-label">Age (optional)</label><input id="number" type="number" min="11" max="13" placeholder="Age" required/>
+        <label>Which option best describes your current role?</label>
+        <select>
+          <option disabled selected value>Select current role</option>
+          <option>Student</option>
+          <option>Full Time Job</option>
+          <option>Full Time Learner</option>
+          <option>Prefer not yo say</option>
+          <option>Other</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label>Would you recommend freeCodeCamp to a friend?</label>
+        <label><input class="inline" name="select-name1" value="1" type="radio"> Definitely</label>
+        <label><input class="inline" name="select-name1" value="2" type="radio"> Maybe</label>
+        <label><input class="inline" name="select-name1" value="2" type="radio"> Not sure</label>
+      </fieldset>
+      <fieldset>
+        <label>What is your favorite feature of freeCodeCamp?</label>
+        <select id="dropdown">
+          <option disabled selected value>Select an option</option>
+          <option>Challenges</option>
+          <option>Projects</option>
+          <option>Community</option>
+          <option>Open Source</option>
+        </select>   
+      </fieldset>
+      <fieldset>
+        <label>What would you like to see improved? (Check all that apply)</label>
+        <label><input class="inline" value="1" type="checkbox"> Front-end Developer</label>
+        <label><input class="inline" value="2" type="checkbox"> Back-end Developer</label>
+      </fieldset>
+      <fieldset>
+        <label>Any comments or suggestions?</label>
+        <textarea placeholder="Comments"></textarea>
+      </fieldset>
+        <input type="submit" id="submit" value="Submit" ></input>
+    </form>
+  </body>
+</html>
